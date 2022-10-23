@@ -2,11 +2,13 @@ import "./App.css";
 import { useState } from "react";
 import { ethers } from "ethers";
 import Greeter from "./artifacts/contracts/Greeter.sol/Greeter.json";
-import Token from "./artifacts/contracts/Token.sol/Token.json";
+// import Token from "./artifacts/contracts/Token.sol/Token.json";
+import Token from "./artifacts/contracts/NDToken.sol/NDToken.json";
 
 const greeterAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"; // localhost
 // const greeterAddress = "0x6410Fdfaf3a1e3EE51622a1e803275Fab1c1298D" // goerli
-const tokenAddress = "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9"; // localhost
+// const tokenAddress = "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9"; // localhost
+const tokenAddress = "0x0165878A594ca255338adfa4d48449f69242Eb8F"; // localhost erc20
 
 function App() {
   const [greeting, setGreetingValue] = useState();
